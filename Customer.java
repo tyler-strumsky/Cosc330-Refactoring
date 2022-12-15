@@ -39,7 +39,7 @@ public class Customer {
     }
 
     public String statement() {
-        
+
         String result = "Rental record for " + getName() + "\n";
         for (Rental rental : rentals) {
            
