@@ -4,7 +4,7 @@ public class ChildrensPrice extends Price {
         return Movie.CHILDREN;
     }
 
-    /* 
+    
     public double getCharge(int daysRented)
     {
         if (daysRented > 3)
@@ -12,5 +12,5 @@ public class ChildrensPrice extends Price {
         else
             return 1.5;
     }
-    */
+    
 }
