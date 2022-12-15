@@ -18,27 +18,9 @@ public class Customer {
         rentals.add(rental);
     }
 
-    public double amountFor(Rental rental)
+    public double amountFor(Rental currentRental) 
     {
-        double amount = 0;
-
-        switch (rental.getMovie().getPriceCode()) {
-            case Movie.REGULAR:
-                amount += 2;
-                if (rental.getDaysRented() > 2)
-                    amount += (rental.getDaysRented() - 2) * 1.5;
-                break;
-            case Movie.NEW_RELEASE:
-                amount += rental.getDaysRented() * 3;
-                break;
-            case Movie.CHILDREN:
-                amount += 1.5;
-                if (rental.getDaysRented() > 3)
-                    amount += (rental.getDaysRented() - 3) * 1.5;
-                break;
-        }
-
-        return amount;
+        return currentRental.getCharge();
     }
 
 
