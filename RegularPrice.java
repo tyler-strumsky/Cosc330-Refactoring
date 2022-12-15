@@ -3,7 +3,6 @@ public class RegularPrice extends Price {
     {
         return Movie.REGULAR;
     }
-
     
     public double getCharge(int daysRented)
     {
@@ -12,5 +11,6 @@ public class RegularPrice extends Price {
         else
             return 2;
     }
+    
     
 }
